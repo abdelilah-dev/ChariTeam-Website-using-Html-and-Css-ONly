@@ -997,7 +997,7 @@ a {
 }
 
 .team-content .row .box:hover .info {
-    transform: translateY(-3rem);
+    transform: translateY(-4rem);
 }
 
 .team-content .row .box .info h5 {
@@ -1020,12 +1020,12 @@ a {
     justify-content: center;
     gap: 0.5rem;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0 2rem;
     transform: translateY(-1rem);
 }
 
 .team-content .row .box:hover .social-link {
-    transform: translateY(-4rem);
+    transform: translateY(-5rem);
 }
 
 .team-content .row .box .social-link i {
