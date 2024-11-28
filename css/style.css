@@ -803,3 +803,243 @@ a {
 }
 
 /* End What We Do Section  */
+
+/* Start Donate Section  */
+.donate-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: rgba(0, 29, 35, .8);
+}
+
+.donate-section .donate-content .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.donate-content .row .col {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+}
+
+@media (max-width: 992px) {
+    .donate-content .row .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.donate-content .row .info .main-heading h2 {
+    color: white;
+}
+
+.donate-content .row .info p {
+    line-height: 1.5;
+    color: var(--main-paraColor);
+    font-size: 17px;
+}
+
+.donate-content .row .donate-form {
+    padding: 3rem;
+    background: white;
+    border-radius: 5px;
+}
+
+.donate-content .row .donate-form form>div:first-child,
+.donate-content .row .donate-form form>div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+
+.donate-content .row .donate-form form input {
+    padding: 1.5rem 0.75rem 1rem;
+    width: 100%;
+    background-color: #F8F8F9;
+    outline-color: #ffb787;
+    border: none;
+    border-radius: 10px;
+    transition: var(--main-transition-duration);
+}
+
+.donate-content .row .donate-form form input:focus {
+    outline: 4px solid #ffb787;
+}
+
+.donate-content .row .donate-form form label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.75rem;
+    color: #5c5454;
+    transition: var(--main-transition-duration);
+    font-weight: 600;
+    user-select: none;
+    pointer-events: none;
+}
+
+.donate-content .row .donate-form form input:focus+label {
+    font-size: 12px;
+    top: 10px;
+    transform: translate(0, 0);
+    color: var(--gray-para-color);
+}
+
+.donate-content .row .donate-form form .select-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.donate-content .row .donate-form form .select-price div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    background-color: #F8F8F9;
+    padding: 1.5rem 1rem;
+    font-size: 18px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--main-transition-duration);
+}
+
+.donate-content .row form .select-price div:first-child {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.donate-content .row form .select-price div:last-child {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.donate-content .row form .select-price div:hover {
+    border-color: var(--yellow-color);
+    color: var(--yellow-color);
+}
+
+.donate-content .row form .select-price div.active {
+    border-color: var(--yellow-color);
+    color: var(--yellow-color);
+    outline: 4px solid #F8F8F9;
+}
+
+.donate-content .row .donate-form form .select-price div span {}
+
+.donate-content .row .donate-form form .select-price div span {}
+
+/* End Donate Section  */
+/* Start Team Members Section  */
+.team-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.team-section .container .main-heading {
+    text-align: center;
+}
+
+.team-section .container .main-heading span {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.team-section .container .team-content .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-content .row .box {
+    flex: 0 0 auto;
+    max-width: calc(calc(100% / 4) - calc(6rem / 4));
+    overflow: hidden;
+    border-radius: .5rem;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .team-content .row .box {
+        flex: 0 0 auto;
+        max-width: calc(50% - calc(2rem / 2))
+    }
+}
+
+@media (max-width: 768px) {
+    .team-content .row .box {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+}
+
+.team-content .row .box img {
+    width: 100%;
+    transition: .5s;
+}
+
+.team-content .row .box:hover img {
+    transform: translateY(-2rem);
+}
+
+.team-content .row .box .info {
+    padding: 1rem;
+    background-color: #F8F8F9;
+    text-align: center;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.team-content .row .box:hover .info {
+    transform: translateY(-3rem);
+}
+
+.team-content .row .box .info h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.team-content .row .box .info p {
+    color: var(--yellow-color);
+}
+
+.team-content .row .box .social-link {
+    background: #F8F8F9;
+    transition: 0.5s;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    transform: translateY(-1rem);
+}
+
+.team-content .row .box:hover .social-link {
+    transform: translateY(-4rem);
+}
+
+.team-content .row .box .social-link i {
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--yellow-color);
+    transition: 0.5s;
+}
+
+.team-content .row .box .social-link i:hover {
+    color: white;
+    background: var(--yellow-color);
+}
+
+/* End Team Members Section  */
