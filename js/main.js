@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 let dropdown_lick = false;
 function click_dropdown_btn() {
     if (!dropdown_lick) {
