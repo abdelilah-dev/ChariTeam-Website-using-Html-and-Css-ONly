@@ -145,6 +145,7 @@ a {
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 1rem;
+    text-transform: capitalize;
 }
 
 .main-heading.h-center {
@@ -162,6 +163,50 @@ a {
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--dark-green-color);
+}
+
+form .primaryInput-form {
+    position: relative;
+}
+
+form .primaryInput-form input,
+form .primaryInput-form textarea {
+    padding: 1.5rem 0.75rem 1rem;
+    width: 100%;
+    border: 1px solid #ced4da;
+    outline-color: #ffb787;
+    border-radius: 10px;
+    transition: var(--main-transition-duration);
+}
+
+form .primaryInput-form input.with-bg.with-border {
+    background-color: #F8F8F9;
+    border: none;
+}
+
+form .primaryInput-form input:focus,
+form .primaryInput-form textarea:focus {
+    outline: 4px solid #ffb787;
+}
+
+form .primaryInput-form label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.75rem;
+    color: #5c5454;
+    transition: var(--main-transition-duration);
+    font-weight: 500;
+    user-select: none;
+    pointer-events: none;
+}
+
+form .primaryInput-form input:focus+label,
+form .primaryInput-form textarea:focus+label {
+    font-size: 12px;
+    top: 10px;
+    transform: translate(0, 0);
+    color: var(--gray-para-color);
 }
 
 /* End components  */
@@ -401,6 +446,10 @@ a {
     height: 32px;
     display: flex;
     align-items: center;
+}
+
+.header-content .bottom-links .dropdown .dropdown-item.active {
+    color: var(--yellow-color);
 }
 
 .header-content .bottom-links .dropdown .dropdown-item:hover {
@@ -799,7 +848,25 @@ a {
 .donate-section {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-color: rgba(0, 29, 35, .8);
+    background-color: white;
+    position: relative;
+}
+
+.donate-section.bg-true {
+    background-image: url(../img/carousel-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donate-section.bg-true::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    top: 0;
+    left: 0;
 }
 
 .donate-section .donate-content .row {
@@ -807,6 +874,7 @@ a {
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .donate-content .row .col {
@@ -846,12 +914,10 @@ a {
 }
 
 
-.donate-content .row .donate-form form input {
+/* .donate-content .row .donate-form form input {
     padding: 1.5rem 0.75rem 1rem;
     width: 100%;
-    background-color: #F8F8F9;
-    outline-color: #ffb787;
-    border: none;
+    
     border-radius: 10px;
     transition: var(--main-transition-duration);
 }
@@ -877,7 +943,7 @@ a {
     top: 10px;
     transform: translate(0, 0);
     color: var(--gray-para-color);
-}
+} */
 
 .donate-content .row .donate-form form .select-price {
     display: flex;

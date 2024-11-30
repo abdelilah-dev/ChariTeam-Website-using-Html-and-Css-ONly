@@ -1,0 +1,162 @@
+:root {
+    --main-paraColor: rgba(255, 255, 255, 0.5);
+    --yellow-color: #FF6F0F;
+    --dark-green-color: #001D23;
+    --gray-para-color: #787878;
+
+    --section-padding: 100px;
+
+    --main-transition-duration: 0.3s;
+}
+
+/* Start Hero Area  */
+.hero-area {
+    height: 60vh;
+}
+
+.hero-area .landing-section .landing-content .tree-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
+}
+
+.hero-area .landing-content .tree-link a {
+    color: white;
+    font-weight: 500;
+    transition: var(--main-transition-duration);
+}
+
+.hero-area .landing-content .tree-link a:hover {
+    color: var(--yellow-color);
+}
+
+.hero-area .landing-content .tree-link a.active {
+    color: var(--yellow-color);
+}
+
+/* End Hero Area  */
+
+/* Start contact us page  */
+.contact-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact-section .contact-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-content .col {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+}
+
+@media(max-width: 992px) {
+    .contact-content .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.contact-content .contact-form p {
+    color: var(--gray-para-color);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.contact-content .contact-form p a {
+    color: var(--yellow-color);
+    transition: var(--main-transition-duration);
+}
+
+.contact-content .contact-form p a:hover {
+    color: #be5915;
+}
+
+.contact-content .contact-form form>div {
+    margin-bottom: 1rem;
+}
+
+.contact-content .contact-form form .user-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contact-content .contact-form form .user-email>div {
+    flex: 0 0 calc(50% - .5rem);
+    max-width: calc(50% - .5rem);
+}
+
+.contact-content form .primaryInput-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-content form>a {
+    margin: 0;
+}
+
+/* End contact us page  */
+
+
+/* Start donate Page  */
+.donate-section.bg-false .donate-content .row .info .main-heading h2 {
+    color: black;
+}
+
+.donate-section.bg-false .donate-content .row .info p {
+    color: var(--gray-para-color);
+}
+
+.donate-section.bg-false .donate-content .row .donate-form {
+    background-color: #FFF0E6;
+}
+
+/* End donate Page  */
+
+/* Start 404 page  */
+.page404 {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.page404 .container .content {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .page404 .container .content {
+        width: 90%;
+    }
+}
+
+.page404 .content h1 {
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.page404 .content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.page404 .content p {
+    color: var(--gray-para-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.page404 .content a {}
+
+
+/* End 404 page  */

@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ChariTeam - Html and Css Template</title>
+        <title>About Us - Html and Css Template</title>
         <!-- main css files  -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="../css/style-minify.css">
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
         <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,21 +52,21 @@
                                     <i class="fa-solid fa-bars"></i>
                                 </div>
                                 <div class="navbar-items">
-                                    <a href="index.html" class="nav-item active">Home</a>
-                                    <a href="html/about.html" class="nav-item">About</a>
-                                    <a href="html/causes.html" class="nav-item">Causes</a>
+                                    <a href="../index.html" class="nav-item">Home</a>
+                                    <a href="about.html" class="nav-item active">About</a>
+                                    <a href="causes.html" class="nav-item">Causes</a>
                                     <div class="dropdown">
                                         <a href="#" class="nav-item dropdown-toggle"
                                             onclick="click_dropdown_btn()">Pages</a>
                                         <div class="dropdown-menu" id="dropdown-menu">
-                                            <a href="html/service.html" class="dropdown-item">Service</a>
-                                            <a href="html/donate.html" class="dropdown-item">Donate</a>
-                                            <a href="html/out_team.html" class="dropdown-item">Our Team</a>
-                                            <a href="html/testimonial.html" class="dropdown-item">Testimonial</a>
-                                            <a href="html/page404.html" class="dropdown-item">404 Page</a>
+                                            <a href="service.html" class="dropdown-item">Service</a>
+                                            <a href="donate.html" class="dropdown-item">Donate</a>
+                                            <a href="out_team.html" class="dropdown-item">Our Team</a>
+                                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                            <a href="page404.html" class="dropdown-item">404 Page</a>
                                         </div>
                                     </div>
-                                    <a href="html/contact.html" class="nav-item">Contact</a>
+                                    <a href="contact.html" class="nav-item">Contact</a>
                                     <a href="donate.html" class="btn bg-trans">Donate Now
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </a>
@@ -76,12 +77,13 @@
                 </header>
                 <section class="landing-section">
                     <div class="landing-content">
-                        <h1>Let's Change The World <br> With Humanity</h1>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed <br> stet lorem sit clita duo
-                            justo erat amet</p>
-                        <a href="donate.html" class="btn bg-yellow">Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                        <h1>About Us</h1>
+                        <div class="tree-link">
+                            <a href="../index.html">Home</a>
+                            <span>/</span>
+                            <a href="#">Pages</a> <span>/</span>
+                            <a href="about.html" class="active">About Us</a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -91,8 +93,8 @@
                 <div class="about-content">
                     <div class="row">
                         <div class="col img">
-                            <img src="img/about-1.jpg" alt="">
-                            <img src="img/about-2.jpg" alt="">
+                            <img src="../img/about-1.jpg" alt="">
+                            <img src="../img/about-2.jpg" alt="">
                         </div>
                         <div class="col info">
                             <div class="main-heading">
@@ -120,90 +122,6 @@
                 </div>
             </div>
         </section>
-        <section class="causes-section">
-            <div class="container">
-                <div class="causes-content">
-                    <div class="main-heading h-center">
-                        <span>Feature Causes</span>
-                        <h2>Every Child Deserves The <br> Opportunity To Learn</h2>
-                    </div>
-                    <div class="row">
-                        <div class="box">
-                            <div class="box-info">
-                                <span class="box-title">Education</span>
-                                <h4>Education For African Children</h4>
-                                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                                <div class="causes-progress">
-                                    <div class="prog-info">
-                                        <span>$10,000 <span>Goal</span></span>
-                                        <span>$9,542 <span>Raised</span></span>
-                                    </div>
-                                    <div class="prog-value">
-                                        <span style="width: 80%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="img-box">
-                                <img src="img/courses-1.jpg" alt="">
-                                <div class="drop-link">
-                                    <a href="#" class="btn bg-trans">Learn More
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-info">
-                                <span class="box-title">Pure Water</span>
-                                <h4>Ensure Pure Drinking Water</h4>
-                                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                                <div class="causes-progress">
-                                    <div class="prog-info">
-                                        <span>$10,000 <span>Goal</span></span>
-                                        <span>$9,542 <span>Raised</span></span>
-                                    </div>
-                                    <div class="prog-value">
-                                        <span style="width: 80%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="img-box">
-                                <img src="img/courses-2.jpg" alt="">
-                                <div class="drop-link">
-                                    <a href="#" class="btn bg-trans">Learn More
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-info">
-                                <span class="box-title">Healthy Life</span>
-                                <h4>Ensure Medical Treatment</h4>
-                                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                                <div class="causes-progress">
-                                    <div class="prog-info">
-                                        <span>$10,000 <span>Goal</span></span>
-                                        <span>$9,542 <span>Raised</span></span>
-                                    </div>
-                                    <div class="prog-value">
-                                        <span style="width: 80%;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="img-box">
-                                <img src="img/courses-3.jpg" alt="">
-                                <div class="drop-link">
-                                    <a href="#" class="btn bg-trans">Learn More
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Start What We Do Section  -->
         <div class="what-wedo-section">
             <div class="container">
@@ -215,7 +133,7 @@
                     </div>
                     <div class="row">
                         <div class="box">
-                            <img src="img/icon-1.png" alt="icon-1 not found">
+                            <img src="../img/icon-1.png" alt="icon-1 not found">
                             <h4>Child Education</h4>
                             <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor
                                 duo.</p>
@@ -224,7 +142,7 @@
                             </a>
                         </div>
                         <div class="box">
-                            <img src="img/icon-2.png" alt="icon-1 not found">
+                            <img src="../img/icon-2.png" alt="icon-1 not found">
                             <h4>Medical Treatment</h4>
                             <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor
                                 duo.</p>
@@ -233,7 +151,7 @@
                             </a>
                         </div>
                         <div class="box">
-                            <img src="img/icon-3.png" alt="icon-1 not found">
+                            <img src="../img/icon-3.png" alt="icon-1 not found">
                             <h4>Pure Drinking Water</h4>
                             <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor
                                 duo.</p>
@@ -245,52 +163,7 @@
                 </div>
             </div>
         </div>
-        <!-- End What We Do Section  -->
-        <!-- sTart Donate Section  -->
-        <div class="donate-section bg-true">
-            <div class="container">
-                <div class="donate-content">
-                    <div class="row">
-                        <div class="col info">
-                            <div class="main-heading">
-                                <span>Donate Now</span>
-                                <h2>Thanks For The Results Achieved With You</h2>
-                            </div>
-                            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                                Clita erat ipsum et lorem et
-                                sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        </div>
-                        <div class="col donate-form">
-                            <form action="">
-                                <div class="primaryInput-form">
-                                    <input type="text" class="with-bg with-border" required id="user" name="user">
-                                    <label for="user">Your Name</label>
-                                </div>
-                                <div class="primaryInput-form">
-                                    <input type="email" class="with-bg with-border" required id="email" name="email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                                <div class="select-price">
-                                    <div id="first-price" onclick="price_select(10)" class="price-box active">
-                                        <span>$10</span>
-                                    </div>
-                                    <div id="second-price" onclick="price_select(20)" class="price-box">
-                                        <span>$20</span>
-                                    </div>
-                                    <div id="therd-price" onclick="price_select(30)" class="price-box">
-                                        <span>$30</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn bg-yellow">Donate Now
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Donate Section  -->
+        <!-- End What we do section  -->
         <!-- Start Team Members Section  -->
         <div class="team-section">
             <div class="container">
@@ -301,7 +174,7 @@
                     </div>
                     <div class="row">
                         <div class="box">
-                            <img src="img/team-1.jpg" alt="">
+                            <img src="../img/team-1.jpg" alt="">
                             <div class="info">
                                 <h5>Full Name</h5>
                                 <p>Designation</p>
@@ -313,7 +186,7 @@
                             </div>
                         </div>
                         <div class="box">
-                            <img src="img/team-4.jpg" alt="">
+                            <img src="../img/team-4.jpg" alt="">
                             <div class="info">
                                 <h5>Full Name</h5>
                                 <p>Designation</p>
@@ -325,11 +198,10 @@
                             </div>
                         </div>
                         <div class="box">
-                            <img src="img/team-1.jpg" alt="">
+                            <img src="../img/team-1.jpg" alt="">
                             <div class="info">
                                 <h5>Full Name</h5>
                                 <p>Designation</p>
-
                             </div>
                             <div class="social-link">
                                 <i class="fa-brands fa-twitter"></i>
@@ -338,7 +210,7 @@
                             </div>
                         </div>
                         <div class="box">
-                            <img src="img/team-4.jpg" alt="">
+                            <img src="../img/team-4.jpg" alt="">
                             <div class="info">
                                 <h5>Full Name</h5>
                                 <p>Designation</p>
@@ -354,58 +226,6 @@
             </div>
         </div>
         <!-- End Team Members Section  -->
-        <!-- Start Testimonial Section  -->
-        <div class="testimonial-section">
-            <div class="container">
-                <div class="main-heading h-center">
-                    <span>Testimonial</span>
-                    <h2>Trusted By Thousands Of <br> People And Nonprofits</h2>
-                </div>
-                <div class="row">
-                    <div class="box">
-                        <div class="avatar">
-                            <img src="img/testimonial-2.jpg" alt="">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
-                                Magna ut diam sit et amet stet eos
-                                sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5>Doner Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <div class="box active">
-                        <div class="avatar">
-                            <i class="fa-solid fa-arrow-left"></i>
-                            <img src="img/testimonial-3.jpg" alt="">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <div class="testimonial-text">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
-                                Magna ut diam sit et amet stet eos
-                                sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5>Doner Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="avatar">
-                            <img src="img/testimonial-3.jpg" alt="">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
-                                Magna ut diam sit et amet stet eos
-                                sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                            <h5>Doner Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        <!-- End Testimonial Section  -->
         <!-- Start Footer Section  -->
         <div class="footer-section">
             <div class="container">
@@ -440,13 +260,13 @@
                         <h3>Quick Links</h3>
                         <ul>
                             <li><i class="fa-solid fa-angle-right"></i>
-                                <a href="html/about.html">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li><i class="fa-solid fa-angle-right"></i>
-                                <a href="html/contact.html">Contact Us</a>
+                                <a href="contact.html">Contact Us</a>
                             </li>
                             <li><i class="fa-solid fa-angle-right"></i>
-                                <a href="html/service.html">Our Services</a>
+                                <a href="service.html">Our Services</a>
                             </li>
                             <li><i class="fa-solid fa-angle-right"></i>
                                 <a href="#">Terms & Condition</a>
@@ -473,7 +293,7 @@
             </div>
         </div>
         <!-- End Footer Section  -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
     </body>
 
 </html>
